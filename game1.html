@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simón Dice</title>
+    <link rel="stylesheet" href="stylesOne.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="simon-board">
+            <div class="color-button" id="green"></div>
+            <div class="color-button" id="red"></div>
+            <div class="color-button" id="yellow"></div>
+            <div class="color-button" id="blue"></div>
+            <div class="color-button" id="pink" style="display: none;"></div>
+            <div class="color-button" id="orange" style="display: none;"></div>
+            <div class="color-button" id="purple" style="display: none;"></div>
+            <div class="color-button" id="cyan" style="display: none;"></div>
+        </div>
+        <div id="controls">
+            <button id="start-button">Empezar</button>
+            <select id="difficulty">
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+            <p id="message"></p>
+            <p id="score">Ganadas: 0</p>
+            <div id="lives">
+                <img src="imagenes/pink-heart.png" alt="Vida" class="heart">
+                <img src="imagenes/pink-heart.png" alt="Vida" class="heart">
+                <img src="imagenes/pink-heart.png" alt="Vida" class="heart">
+            </div>
+            <p id="timer">Tiempo: 02:00</p>
+        </div>
+    </div>
+    <div id="final-message" style="display: none;">
+        <p id="final-text"></p>
+        <button id="next-game-button">Entrar</button>
+        <button id="retry-button">Volver a Intentarlo</button>
+    </div>
+    <canvas id="confetti-canvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="confetti.js"></script>
+    <script src="simon.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#simon-board {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s, box-shadow 0.2s;
+}
+
+.color-button:active {
+    opacity: 1;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#cyan {
+    background-color: cyan;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button, select {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, select:hover {
+    background-color: #f5c6cb;
+}
+
+#message, #score {
+    font-size: 20px;
+    color: #333;
+}
+
+#final-message {
+    text-align: center;
+}
+
+#next-game-button {
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Agrega estos estilos adicionales al final de tu archivo CSS */
+#lives {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+#timer {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#final-message {
+    text-align: center;
+}
+
+#retry-button {
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
