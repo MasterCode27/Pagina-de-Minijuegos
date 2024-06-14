@@ -72,7 +72,7 @@ function createHeart() {
 }
 
 document.getElementById('secret-button').addEventListener('click', () => {
-    window.location.href = 'minijuego.html';
+    window.location.href = 'game1.html';
 });
 
 

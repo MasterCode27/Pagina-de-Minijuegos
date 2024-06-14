@@ -34,11 +34,15 @@
             </div>
             <p id="timer">Tiempo: 02:00</p>
         </div>
+        <p id="countdown" style="display: none;"></p>
     </div>
     <div id="final-message" style="display: none;">
         <p id="final-text"></p>
-        <button id="next-game-button">Entrar</button>
-        <button id="retry-button">Volver a Intentarlo</button>
+        <div id="final-buttons">
+            <button id="next-game-button">Siguiente minijuego</button>
+            <button id="retry-button">Volver a Intentarlo</button>
+            <button id="replay-button" style="display: none;">¿Quieres volver a jugar?</button>
+        </div>
     </div>
     <canvas id="confetti-canvas"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
@@ -46,6 +50,11 @@
     <script src="simon.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
 
